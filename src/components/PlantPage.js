@@ -20,11 +20,15 @@ function PlantPage() {
     plant.name.toLowerCase ().includes(searchTerm.toLowerCase())
   );
 
+  const handleNewPlant = (newPlant) => {
+    const updatedPlants = [...plants,{ ...newPlant,id : plants.length +1}];
+    setPlants(updatedPlants);
+  }
 
   return (
 
     <main>
-      <NewPlantForm />
+      <NewPlantForm onAddPlant={handleNewPlant}/>
       <Search onSearch={setSearchTerm}/>
       <PlantList plants={filteredPlants} />
     </main>
