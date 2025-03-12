@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "apple",
+      "image": "https://unsplash.com/photos/a-speeding-train-streaks-through-a-subway-station-aYIs5oHZtKg",
+      "price": 13,
+      "id": 8
+    },
+    {
+      "name": "pineapple",
+      "image": "./images/pineapple.jpg",
+      "price": 29,
+      "id": 9
     }
   ]
 }

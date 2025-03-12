@@ -14,11 +14,12 @@ function NewPlantForm({onAddPlant}) {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
-    const newPlant ={
-      ...formData, price: parseFloat(formData.price)
-    };
+
+    const newPlant ={ ...formData, price: parseFloat(formData.price),};
+
+    console.log("New Plant Data:", newPlant);
     onAddPlant(newPlant);
-    setFormData({name:"",image:"",price:""});
+    setFormData({name: "",image: "",price: ""});
 
   };
 
